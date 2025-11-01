@@ -26,8 +26,8 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brandCream to-white">
       {/* Hero Section */}
-      <div className="section-padding bg-gradient-to-br from-brandGreen-600 via-brandGreen-700 to-brandBlue-700 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <div className="section-padding bg-gradient-to-br from-brandGreen-500 via-brandGreen-600 to-brandBlue-600 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
         <div className="container relative z-10 animate-slide-up">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center leading-tight">
             Contact Us

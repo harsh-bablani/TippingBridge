@@ -12,6 +12,8 @@ interface Service {
   img: string
   gradient: string
   icon: string
+  textColor: string
+  iconColor: string
   features: {
     title: string
     items: string[]
@@ -27,6 +29,8 @@ const services: Service[] = [
     img: propertyImg,
     gradient: 'from-brandGreen-500 to-brandGreen-700',
     icon: '🏠',
+    textColor: 'brandGreen',
+    iconColor: 'brandGreen',
     features: [
       {
         title: 'Rent Collection & Deposit',
@@ -103,6 +107,8 @@ const services: Service[] = [
     img: conciergeImg,
     gradient: 'from-brandBlue-500 to-brandBlue-700',
     icon: '🏡',
+    textColor: 'brandBlue',
+    iconColor: 'brandBlue',
     features: [
       {
         title: 'Why Choose Tipping Bridge Homes',
@@ -125,6 +131,8 @@ const services: Service[] = [
     img: elderlyImg,
     gradient: 'from-brandPink-500 to-brandPink-700',
     icon: '❤️',
+    textColor: 'brandPink',
+    iconColor: 'brandPink',
     features: [
       {
         title: 'Health & Fitness',
@@ -176,6 +184,8 @@ const services: Service[] = [
     img: investImg,
     gradient: 'from-brandGold-500 to-brandGold-700',
     icon: '💰',
+    textColor: 'brandGold',
+    iconColor: 'brandGold',
     features: [
       {
         title: 'Insurance Services',
@@ -219,6 +229,8 @@ const services: Service[] = [
     img: legalImg,
     gradient: 'from-brandGreen-500 to-brandBlue-600',
     icon: '📋',
+    textColor: 'brandGreen',
+    iconColor: 'brandBlue',
     features: [
       {
         title: 'Document Procurement',
@@ -256,6 +268,8 @@ const services: Service[] = [
     img: elderlyImg,
     gradient: 'from-brandPink-500 to-brandBlue-600',
     icon: '🏥',
+    textColor: 'brandPink',
+    iconColor: 'brandBlue',
     features: [
       {
         title: 'Doctor & Hospitalization Support',
@@ -282,6 +296,8 @@ const services: Service[] = [
     img: conciergeImg,
     gradient: 'from-brandGold-500 to-brandPink-600',
     icon: '🎉',
+    textColor: 'brandGold',
+    iconColor: 'brandPink',
     features: [
       {
         title: 'Our Event Services',
@@ -307,11 +323,50 @@ const services: Service[] = [
 export default function Services() {
   const [expandedService, setExpandedService] = useState<number | null>(null)
 
+  // Color mapping for dynamic styling
+  const getColorClasses = (color: string) => {
+    const colorMap: Record<string, { text800: string; text600: string; gradient500: string; gradient600: string; shadow: string; bg50: string }> = {
+      brandGreen: {
+        text800: 'text-brandGreen-800',
+        text600: 'text-brandGreen-600',
+        gradient500: 'from-brandGreen-500',
+        gradient600: 'to-brandGreen-600',
+        shadow: 'shadow-brandGreen/50',
+        bg50: 'from-brandGreen-50/80'
+      },
+      brandBlue: {
+        text800: 'text-brandBlue-800',
+        text600: 'text-brandBlue-600',
+        gradient500: 'from-brandBlue-500',
+        gradient600: 'to-brandBlue-600',
+        shadow: 'shadow-brandBlue/50',
+        bg50: 'from-brandBlue-50/80'
+      },
+      brandPink: {
+        text800: 'text-brandPink-800',
+        text600: 'text-brandPink-600',
+        gradient500: 'from-brandPink-500',
+        gradient600: 'to-brandPink-600',
+        shadow: 'shadow-brandPink/50',
+        bg50: 'from-brandPink-50/80'
+      },
+      brandGold: {
+        text800: 'text-brandGold-800',
+        text600: 'text-brandGold-600',
+        gradient500: 'from-brandGold-500',
+        gradient600: 'to-brandGold-600',
+        shadow: 'shadow-brandGold/50',
+        bg50: 'from-brandGold-50/80'
+      }
+    }
+    return colorMap[color] || colorMap.brandGreen
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-b from-brandCream to-white">
       {/* Hero Section */}
-      <div className="section-padding bg-gradient-to-br from-brandGreen-600 via-brandGreen-700 to-brandBlue-700 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
+      <div className="section-padding bg-gradient-to-br from-brandGreen-500 via-brandGreen-600 to-brandBlue-600 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/10"></div>
         <div className="container relative z-10 animate-slide-up">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center leading-tight">
             Our Comprehensive Services
@@ -356,39 +411,42 @@ export default function Services() {
                 </div>
 
                 {/* Expanded Content */}
-                {expandedService === index && (
-                  <div className="p-8 md:p-12 space-y-8 animate-slide-up">
-                    {service.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="glass-card rounded-2xl p-6 hover:shadow-2xl transition-all duration-300">
-                        <h3 className="text-2xl font-bold text-brandGreen-800 mb-4 flex items-center">
-                          <span className="w-4 h-4 bg-gradient-to-br from-brandGreen-500 to-brandGreen-600 rounded-full mr-3 animate-glow shadow-lg shadow-brandGreen/50"></span>
-                          {feature.title}
-                        </h3>
-                        <ul className="space-y-3">
-                          {feature.items.map((item, itemIndex) => (
-                            <li key={itemIndex} className="flex items-start text-gray-700 group/item">
-                              <span className="text-brandGreen-600 mr-3 mt-1 flex-shrink-0 text-lg group-hover/item:scale-125 transition-transform duration-200 font-bold">✓</span>
-                              <span className="leading-relaxed text-base">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    ))}
-                    {service.benefits && (
-                      <div className="glass-card rounded-2xl p-6 bg-gradient-to-br from-brandGreen-50/80 to-brandBlue-50/80">
-                        <h3 className="text-2xl font-bold text-brandGreen-800 mb-4">Benefits</h3>
-                        <ul className="space-y-2">
-                          {service.benefits.map((benefit, benefitIndex) => (
-                            <li key={benefitIndex} className="flex items-start text-brandGreen-800 font-medium group/item">
-                              <span className="text-brandGold-500 mr-3 mt-1 group-hover/item:scale-125 group-hover/item:rotate-12 transition-all duration-300">⭐</span>
-                              <span>{benefit}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
-                  </div>
-                )}
+                {expandedService === index && (() => {
+                  const colors = getColorClasses(service.textColor)
+                  return (
+                    <div className="p-8 md:p-12 space-y-8 animate-slide-up">
+                      {service.features.map((feature, featureIndex) => (
+                        <div key={featureIndex} className="glass-card rounded-2xl p-6 hover:shadow-2xl transition-all duration-300">
+                          <h3 className={`text-2xl font-bold ${colors.text800} mb-4 flex items-center`}>
+                            <span className={`w-4 h-4 bg-gradient-to-br ${colors.gradient500} ${colors.gradient600} rounded-full mr-3 animate-glow shadow-lg ${colors.shadow}`}></span>
+                            {feature.title}
+                          </h3>
+                          <ul className="space-y-3">
+                            {feature.items.map((item, itemIndex) => (
+                              <li key={itemIndex} className="flex items-start text-gray-700 group/item">
+                                <span className={`${colors.text600} mr-3 mt-1 flex-shrink-0 text-lg group-hover/item:scale-125 transition-transform duration-200 font-bold`}>✓</span>
+                                <span className="leading-relaxed text-base">{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      ))}
+                      {service.benefits && (
+                        <div className={`glass-card rounded-2xl p-6 bg-gradient-to-br ${colors.bg50} to-brandBlue-50/80`}>
+                          <h3 className={`text-2xl font-bold ${colors.text800} mb-4`}>Benefits</h3>
+                          <ul className="space-y-2">
+                            {service.benefits.map((benefit, benefitIndex) => (
+                              <li key={benefitIndex} className={`flex items-start ${colors.text800} font-medium group/item`}>
+                                <span className="text-brandGold-500 mr-3 mt-1 group-hover/item:scale-125 group-hover/item:rotate-12 transition-all duration-300">⭐</span>
+                                <span>{benefit}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
+                    </div>
+                  )
+                })()}
               </div>
             ))}
           </div>
