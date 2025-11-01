@@ -26,19 +26,19 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brandCream to-white">
       {/* Hero Section */}
-      <div className="section-padding bg-gradient-to-br from-brandGreen-500 via-brandGreen-600 to-brandBlue-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <div className="section-padding bg-gradient-to-br from-brandPink-500 via-brandPink-600 to-brandPink-700 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/5"></div>
         <div className="container relative z-10 animate-slide-up">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center leading-tight">
             Contact Us
           </h1>
-          <p className="text-xl sm:text-2xl text-brandCream/90 text-center max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-white/95 text-center max-w-3xl mx-auto">
             We usually respond within minutes on WhatsApp.
           </p>
         </div>
         {/* Decorative elements */}
         <div className="absolute top-0 right-0 w-96 h-96 bg-brandGold/20 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brandPink/20 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-brandBlue/20 rounded-full blur-3xl"></div>
       </div>
 
       <div className="section-padding">
@@ -58,7 +58,7 @@ export default function Contact() {
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                     required
-                    className="w-full px-4 py-2.5 sm:py-3 rounded-lg bg-white/50 backdrop-blur-sm border-2 border-white/30 focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/20 focus:bg-white/80 text-base transition-all"
+                    className="w-full px-4 py-2.5 sm:py-3 rounded-lg bg-white/50 backdrop-blur-sm border-2 border-white/30 focus:border-brandPink-500 focus:ring-2 focus:ring-brandPink/20 focus:bg-white/80 text-base transition-all"
                     placeholder="Your full name"
                   />
                 </div>
@@ -71,7 +71,7 @@ export default function Contact() {
                     value={phone}
                     onChange={(e) => setPhone(e.target.value)}
                     required
-                    className="w-full px-4 py-2.5 sm:py-3 rounded-lg bg-white/50 backdrop-blur-sm border-2 border-white/30 focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/20 focus:bg-white/80 text-base transition-all"
+                    className="w-full px-4 py-2.5 sm:py-3 rounded-lg bg-white/50 backdrop-blur-sm border-2 border-white/30 focus:border-brandPink-500 focus:ring-2 focus:ring-brandPink/20 focus:bg-white/80 text-base transition-all"
                     placeholder="+91 1234567890"
                   />
                 </div>
@@ -84,7 +84,7 @@ export default function Contact() {
                     onChange={(e) => setMessage(e.target.value)}
                     rows={5}
                     required
-                    className="w-full px-4 py-2.5 sm:py-3 rounded-lg bg-white/50 backdrop-blur-sm border-2 border-white/30 focus:border-brandGreen focus:ring-2 focus:ring-brandGreen/20 focus:bg-white/80 text-base transition-all resize-none"
+                    className="w-full px-4 py-2.5 sm:py-3 rounded-lg bg-white/50 backdrop-blur-sm border-2 border-white/30 focus:border-brandPink-500 focus:ring-2 focus:ring-brandPink/20 focus:bg-white/80 text-base transition-all resize-none"
                     placeholder="Tell us how we can help..."
                   />
                 </div>
@@ -97,30 +97,30 @@ export default function Contact() {
               </form>
             </div>
             <div className="premium-card group p-5 sm:p-6 md:p-8 rounded-3xl h-fit lg:sticky lg:top-24">
-              <h2 className="text-xl sm:text-2xl font-semibold text-brandGreen-800 mb-4 sm:mb-6">
+              <h2 className="text-xl sm:text-2xl font-semibold text-brandPink-800 mb-4 sm:mb-6">
                 Business Info
               </h2>
               <ul className="space-y-3 sm:space-y-4 text-gray-800 text-sm sm:text-base">
                 <li className="flex items-start">
-                  <strong className="text-brandGreen-700 min-w-[70px] sm:min-w-[80px]">Email:</strong>
+                  <strong className="text-brandPink-700 min-w-[70px] sm:min-w-[80px]">Email:</strong>
                   <a
                     href="mailto:info@tippingbridge.com"
-                    className="text-brandGreen-600 hover:text-brandGreen-800 hover:underline break-all"
+                    className="text-brandPink-600 hover:text-brandPink-800 hover:underline break-all"
                   >
                     info@tippingbridge.com
                   </a>
                 </li>
                 <li className="flex items-start">
-                  <strong className="text-brandGreen-700 min-w-[70px] sm:min-w-[80px]">Mobile:</strong>
+                  <strong className="text-brandPink-700 min-w-[70px] sm:min-w-[80px]">Mobile:</strong>
                   <a
                     href={`tel:+91${WHATSAPP_NUMBER}`}
-                    className="text-brandGreen-600 hover:text-brandGreen-800 hover:underline"
+                    className="text-brandPink-600 hover:text-brandPink-800 hover:underline"
                   >
                     +91 {WHATSAPP_NUMBER}
                   </a>
                 </li>
                 <li className="flex items-start">
-                  <strong className="text-brandGreen-700 min-w-[70px] sm:min-w-[80px]">Address:</strong>
+                  <strong className="text-brandPink-700 min-w-[70px] sm:min-w-[80px]">Address:</strong>
                   <span className="text-gray-700">
                     Plot No- 1791, Sector 52, Gurgaon, Haryana. Pin - 122002
                   </span>
@@ -148,7 +148,7 @@ export default function Contact() {
           {/* Service Areas Section */}
           <div className="mt-16 mb-8">
             <div className="text-center mb-12">
-              <h2 className="text-3xl sm:text-4xl font-bold text-brandGreen-800 mb-4">Our Service Areas</h2>
+              <h2 className="text-3xl sm:text-4xl font-bold text-brandPink-800 mb-4">Our Service Areas</h2>
               <p className="text-xl text-gray-700 max-w-2xl mx-auto">Comprehensive support across major cities in India</p>
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -158,8 +158,8 @@ export default function Contact() {
                   className="premium-card group p-6 rounded-3xl"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <h3 className="text-xl font-bold text-brandGreen-800 mb-4 flex items-center">
-                    <span className="w-8 h-8 bg-brandGreen-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                  <h3 className="text-xl font-bold text-brandPink-800 mb-4 flex items-center">
+                    <span className="w-8 h-8 bg-brandPink-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
                       📍
                     </span>
                     {area.state}
@@ -168,7 +168,7 @@ export default function Contact() {
                     {area.cities.map((city) => (
                       <span
                         key={city}
-                        className="inline-block bg-brandCream-100/80 backdrop-blur-sm text-brandGreen-700 px-3 py-1 rounded-full text-sm font-medium border border-brandGreen-200/50 hover:border-brandGreen-300 hover:scale-110 transition-all duration-300 hover:shadow-lg"
+                        className="inline-block bg-brandCream-100/80 backdrop-blur-sm text-brandPink-700 px-3 py-1 rounded-full text-sm font-medium border border-brandPink-200/50 hover:border-brandPink-300 hover:scale-110 transition-all duration-300 hover:shadow-lg"
                       >
                         {city}
                       </span>

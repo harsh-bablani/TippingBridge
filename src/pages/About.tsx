@@ -13,13 +13,13 @@ export default function About() {
       icon: '✓',
       title: 'Integrity',
       description: 'We maintain absolute honesty, ethical standards, and professionalism in every interaction and transaction.',
-      gradient: 'from-brandGreen-400 to-brandGreen-600'
+      gradient: 'from-brandGold-400 to-brandGold-600'
     },
     {
       icon: '💚',
       title: 'Courtesy',
       description: 'Every client is treated with genuine respect, empathy, and compassion – because your comfort matters.',
-      gradient: 'from-brandGreen-500 to-brandGreen-700'
+      gradient: 'from-brandPink-400 to-brandPink-600'
     },
     {
       icon: '⚡',
@@ -31,7 +31,7 @@ export default function About() {
       icon: '⭐',
       title: 'Excellence',
       description: 'Committed to continuous improvement, delivering superior quality service, and setting industry benchmarks.',
-      gradient: 'from-brandGreen-600 to-brandBlue-600'
+      gradient: 'from-brandGold-500 to-brandBlue-500'
     }
   ]
 
@@ -45,14 +45,14 @@ export default function About() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brandCream to-white">
       {/* Hero Section */}
-      <div className="section-padding bg-gradient-to-br from-brandGreen-500 via-brandGreen-600 to-brandBlue-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <div className="section-padding bg-gradient-to-br from-brandBlue-600 via-brandBlue-700 to-brandBlue-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/5"></div>
         <div className="container relative z-10">
           <div className={`max-w-3xl ${isVisible ? 'animate-slide-up' : 'opacity-0'}`}>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
               About Tipping Bridge
             </h1>
-            <p className="text-xl sm:text-2xl md:text-3xl text-brandCream/90 leading-relaxed">
+            <p className="text-xl sm:text-2xl md:text-3xl text-white/95 leading-relaxed">
               Your one-stop solution for all NRI needs in India – seamless, trusted, and professional.
             </p>
           </div>
@@ -97,9 +97,9 @@ export default function About() {
           {/* Vision & Mission */}
           <div className="grid md:grid-cols-2 gap-8 mb-20">
             <div className="premium-card group p-8 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-48 h-48 bg-brandGreen-200/30 rounded-full blur-2xl"></div>
+              <div className="absolute top-0 right-0 w-48 h-48 bg-brandBlue-200/30 rounded-full blur-2xl"></div>
               <div className="flex items-center mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-brandGreen-500 to-brandGreen-600 rounded-full flex items-center justify-center text-3xl mr-4 icon-glow shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-brandBlue-500 to-brandBlue-600 rounded-full flex items-center justify-center text-3xl mr-4 icon-glow shadow-lg">
                   👁️
                 </div>
                 <h3 className="text-2xl font-bold text-brandBlue-800">Our Vision</h3>
@@ -110,9 +110,9 @@ export default function About() {
             </div>
 
             <div className="premium-card group p-8 rounded-3xl relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-48 h-48 bg-brandBlue-200/30 rounded-full blur-2xl"></div>
+              <div className="absolute top-0 right-0 w-48 h-48 bg-brandGold-200/30 rounded-full blur-2xl"></div>
               <div className="flex items-center mb-4">
-                <div className="w-14 h-14 bg-gradient-to-br from-brandBlue-500 to-brandBlue-600 rounded-full flex items-center justify-center text-3xl mr-4 icon-glow shadow-lg">
+                <div className="w-14 h-14 bg-gradient-to-br from-brandGold-500 to-brandGold-600 rounded-full flex items-center justify-center text-3xl mr-4 icon-glow shadow-lg">
                   🎯
                 </div>
                 <h3 className="text-2xl font-bold text-brandBlue-800">Our Mission</h3>
@@ -148,7 +148,7 @@ export default function About() {
           </div>
 
           {/* Commitments */}
-          <div className="bg-gradient-to-br from-brandGreen-600 to-brandBlue-700 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
+          <div className="bg-gradient-to-br from-brandBlue-600 to-brandBlue-800 rounded-3xl p-8 md:p-12 text-white shadow-2xl">
             <h3 className="text-3xl sm:text-4xl font-bold mb-8 text-center">
               Our Commitments to You
             </h3>
@@ -158,7 +158,7 @@ export default function About() {
                   key={index}
                   className="flex items-start space-x-4 bg-white/10 backdrop-blur-sm p-4 rounded-xl border border-white/20 hover:bg-white/20 transition-all duration-300 group hover:scale-105"
                 >
-                  <div className="flex-shrink-0 w-8 h-8 bg-brandGold rounded-full flex items-center justify-center font-bold text-brandGreen-800 mt-1 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
+                  <div className="flex-shrink-0 w-8 h-8 bg-brandGold-300 rounded-full flex items-center justify-center font-bold text-brandBlue-900 mt-1 group-hover:scale-125 group-hover:rotate-12 transition-all duration-300">
                     ✓
                   </div>
                   <p className="text-lg leading-relaxed">{commitment}</p>

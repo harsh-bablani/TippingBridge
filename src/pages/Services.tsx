@@ -418,18 +418,18 @@ export default function Services() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-brandCream to-white">
       {/* Hero Section */}
-      <div className="section-padding bg-gradient-to-br from-brandGreen-500 via-brandGreen-600 to-brandBlue-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/10"></div>
+      <div className="section-padding bg-gradient-to-br from-brandGold-600 via-brandGold-700 to-brandGold-800 text-white relative overflow-hidden">
+        <div className="absolute inset-0 bg-black/5"></div>
         <div className="container relative z-10 animate-slide-up">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-center leading-tight">
             Our Comprehensive Services
           </h1>
-          <p className="text-xl sm:text-2xl text-brandCream/90 text-center max-w-3xl mx-auto">
+          <p className="text-xl sm:text-2xl text-white/95 text-center max-w-3xl mx-auto">
             Everything you need for seamless NRI life management in India
           </p>
         </div>
         {/* Decorative elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-brandGold/20 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-brandBlue/20 rounded-full blur-3xl"></div>
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-brandPink/20 rounded-full blur-3xl"></div>
       </div>
 
@@ -505,9 +505,9 @@ export default function Services() {
           </div>
 
           {/* Call to Action */}
-          <div className="mt-20 relative bg-gradient-to-br from-brandGreen-600 via-brandGreen-700 to-brandBlue-700 rounded-3xl p-10 md:p-14 text-white text-center shadow-2xl animate-scale-in overflow-hidden">
+          <div className="mt-20 relative bg-gradient-to-br from-brandGold-600 via-brandGold-700 to-brandGold-800 rounded-3xl p-10 md:p-14 text-white text-center shadow-2xl animate-scale-in overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-            <div className="absolute bottom-0 left-0 w-64 h-64 bg-brandGold/20 rounded-full blur-3xl"></div>
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-brandBlue/20 rounded-full blur-3xl"></div>
             <h3 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Ready to Simplify Your NRI Life?</h3>
             <p className="text-xl md:text-2xl mb-8 text-white/95 relative z-10">Contact us today and experience the peace of mind you deserve</p>
             <a href="/contact" className="btn bg-white text-brandGold-700 hover:bg-brandCream border-2 border-white/50 relative z-10 px-10 py-4 text-lg inline-block font-bold">Get Started</a>
