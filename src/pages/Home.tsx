@@ -1,12 +1,21 @@
 import HeroSlider from '../components/HeroSlider'
 import { Link } from 'react-router-dom'
+import approachImg from '../assets/approach.png'
+import documentationImg from '../assets/documentation1.png'
+import eldercareImg from '../assets/eldercare.png'
+import gatheringsImg from '../assets/gatherings.png'
+import healthcareImg from '../assets/healthcare.png'
+import investmentImg from '../assets/investment.png'
+import propermanagImg from '../assets/propermanag.png'
 
 export default function Home() {
-  const highlights = [
-    { title: 'Property Management', text: 'End‑to‑end care for your home in India.', link: '/services' },
-    { title: 'Elderly Care', text: 'Compassionate, reliable support for your loved ones.', link: '/services' },
-    { title: 'Legal & Documentation', text: 'Paperwork made simple and secure.', link: '/services' },
-    { title: 'Concierge Services', text: 'Utilities, bills, and errands handled.', link: '/services' },
+  const serviceImages = [
+    { img: documentationImg, title: 'Legal & Documentation', color: '#9333ea' }, // Purple
+    { img: eldercareImg, title: 'Elderly Care', color: '#ec4899' }, // Pink
+    { img: gatheringsImg, title: 'Event Management', color: '#ef4444' }, // Red
+    { img: healthcareImg, title: 'Healthcare', color: '#3b82f6' }, // Blue (default)
+    { img: investmentImg, title: 'Investment & Insurance', color: '#eab308' }, // Yellow
+    { img: propermanagImg, title: 'Property Management', color: '#1e40af' }, // Navy Blue
   ]
 
   const services = [
@@ -52,7 +61,37 @@ export default function Home() {
       {/* About Preview */}
       <section className="section-padding bg-gradient-to-b from-brandCream to-white" id="about-preview">
         <div className="container grid md:grid-cols-2 gap-8 md:gap-10 lg:gap-12 items-center">
-          <div className="order-2 md:order-1">
+          <div className="relative order-1">
+            <div className="absolute -inset-4 sm:-inset-6 rounded-3xl bg-gradient-to-br from-brandGold-200/40 via-brandPink-200/30 to-brandBlue-200/40 blur-2xl opacity-60" />
+            {/* Multi-colored border frame */}
+            <div className="relative w-full aspect-[4/3] rounded-2xl shadow-2xl"
+                 style={{
+                   background: 'linear-gradient(135deg, #fce7f3 0%, #fbbf24 50%, #93c5fd 100%)',
+                   padding: '6px',
+                 }}>
+              <div className="relative w-full h-full rounded-xl bg-white overflow-hidden">
+                {/* Layered colored borders */}
+                <div className="absolute inset-0 rounded-xl" 
+                     style={{
+                       boxShadow: 'inset 0 0 0 2px #fbcfe8, inset 0 0 0 4px #fcd34d, inset 0 0 0 6px #bfdbfe',
+                     }}></div>
+                {/* Image with transparent background handling */}
+                <div className="relative w-full h-full p-2 sm:p-3 flex items-center justify-center">
+                  <img 
+                    src={approachImg} 
+                    alt="Our Approach" 
+                    className="w-full h-full object-contain"
+                    style={{ 
+                      backgroundColor: 'transparent',
+                      mixBlendMode: 'multiply',
+                      filter: 'contrast(1.1) brightness(1.05)',
+                    }}
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="order-2">
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
               <span className="text-brandGreen-800">About </span>
               <span className="text-brandGold-600">Tipping</span>
@@ -66,38 +105,63 @@ export default function Home() {
               Learn More
             </Link>
           </div>
-          <div className="relative order-1 md:order-2">
-            <div className="absolute -inset-4 sm:-inset-6 rounded-3xl bg-gradient-to-br from-brandGold-200/40 via-brandPink-200/30 to-brandBlue-200/40 blur-2xl opacity-60" />
-            <div className="relative aspect-[4/3] rounded-2xl bg-gradient-to-br from-brandBlue-400/30 via-brandCream to-brandPink-300/40 shadow-2xl border border-brandGold-300/30" />
-          </div>
         </div>
       </section>
 
-      {/* Service Highlights */}
+      {/* Service Highlights - Image Grid */}
       <section className="section-padding bg-gradient-to-b from-brandCream/30 to-white" id="services">
         <div className="container">
           <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-brandBlue-800 mb-8 sm:mb-10 text-center sm:text-left">
             What We Do
           </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-            {highlights.map((h) => (
-              <div
-                key={h.title}
-                className="rounded-3xl p-5 sm:p-6 premium-card group"
+          
+          {/* Service Images Grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            {serviceImages.map((service, index) => (
+              <Link
+                key={index}
+                to="/services"
+                className="group relative overflow-hidden rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
               >
-                <h4 className="text-lg sm:text-xl font-semibold text-brandBlue-800 mb-2 sm:mb-3">
-                  {h.title}
-                </h4>
-                <p className="text-gray-700 text-sm sm:text-base mb-4 sm:mb-5 leading-relaxed">
-                  {h.text}
-                </p>
-                <Link
-                  to={h.link}
-                  className="inline-flex items-center text-brandGreen-600 hover:text-brandGreen-700 font-semibold text-sm sm:text-base transition-all duration-300 group-hover:translate-x-2"
-                >
-                  View Service → 
-                </Link>
-              </div>
+                {/* Image Container with colored border */}
+                <div className="aspect-[4/3] relative overflow-hidden rounded-2xl"
+                     style={{
+                       background: 'linear-gradient(135deg, #fce7f3 0%, #fbbf24 50%, #93c5fd 100%)',
+                       padding: '6px',
+                     }}>
+                  <div className="relative w-full h-full bg-white rounded-xl overflow-hidden">
+                    {/* Colored border layers */}
+                    <div className="absolute inset-0 rounded-xl" 
+                         style={{
+                           boxShadow: 'inset 0 0 0 2px #fbcfe8, inset 0 0 0 4px #fcd34d, inset 0 0 0 6px #bfdbfe',
+                         }}></div>
+                    {/* Image */}
+                    <div className="relative w-full h-full p-3 flex items-center justify-center">
+                      <img
+                        src={service.img}
+                        alt={service.title}
+                        className="max-w-full max-h-full w-auto h-auto object-contain"
+                        style={{ 
+                          backgroundColor: 'transparent',
+                          mixBlendMode: 'multiply',
+                        }}
+                      />
+                    </div>
+                  </div>
+                </div>
+                {/* Title */}
+                <div className="mt-4 p-3 text-center bg-white rounded-xl border-2 transition-all group-hover:shadow-lg"
+                     style={{
+                       borderColor: service.color,
+                     }}>
+                  <h4 className="text-lg sm:text-xl font-bold transition-colors"
+                      style={{
+                        color: service.color,
+                      }}>
+                    {service.title}
+                  </h4>
+                </div>
+              </Link>
             ))}
           </div>
         </div>
