@@ -399,7 +399,7 @@ export default function Services() {
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-brandGold/20 rounded-full blur-3xl"></div>
             <h3 className="text-4xl md:text-5xl font-bold mb-6 relative z-10">Ready to Simplify Your NRI Life?</h3>
             <p className="text-xl md:text-2xl mb-8 text-white/95 relative z-10">Contact us today and experience the peace of mind you deserve</p>
-            <a href="/contact" className="btn bg-white text-brandGreen-600 hover:bg-brandCream border-2 border-white/50 relative z-10 px-10 py-4 text-lg inline-block">Get Started</a>
+            <a href="/contact" className="btn bg-white text-brandGold-700 hover:bg-brandCream border-2 border-white/50 relative z-10 px-10 py-4 text-lg inline-block font-bold">Get Started</a>
           </div>
         </div>
       </div>

@@ -24,8 +24,8 @@
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-brandGreen-500 to-brandGreen-600 text-white hover:from-brandGreen-600 hover:to-brandGreen-700 shadow-lg hover:shadow-2xl transition-all duration-300 font-semibold transform hover:scale-105 hover:-translate-y-0.5;
-    box-shadow: 0 4px 20px rgba(76, 175, 80, 0.3);
+    @apply bg-gradient-to-r from-brandGold-500 to-brandGold-600 text-white hover:from-brandGold-600 hover:to-brandGold-700 shadow-lg hover:shadow-2xl transition-all duration-300 font-semibold transform hover:scale-105 hover:-translate-y-0.5;
+    box-shadow: 0 4px 20px rgba(228, 191, 122, 0.3);
   }
   
   .btn-secondary {

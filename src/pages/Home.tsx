@@ -1,5 +1,12 @@
 import HeroSlider from '../components/HeroSlider'
 import { Link } from 'react-router-dom'
+import pmIcon from '../assets/icons/icons/pm.png'
+import stayIcon from '../assets/icons/icons/stay.png'
+import ecIcon from '../assets/icons/icons/ec.png'
+import docsIcon from '../assets/icons/icons/docs.png'
+import investIcon from '../assets/icons/icons/invest.png'
+import eventsIcon from '../assets/icons/icons/events.png'
+import assistIcon from '../assets/icons/icons/assist.png'
 
 export default function Home() {
   const highlights = [
@@ -10,14 +17,13 @@ export default function Home() {
   ]
 
   const services = [
-    { title: 'Property Management', icon: '🏠', link: '/services' },
-    { title: 'Service Apartments', icon: '🏢', link: '/services' },
-    { title: 'Elderly Care', icon: '👴', link: '/services' },
-    { title: 'Legal & Documentation', icon: '📋', link: '/services' },
-    { title: 'Investments & Insurance', icon: '💰', link: '/services' },
-    { title: 'Event Management', icon: '🎉', link: '/services' },
-    { title: 'Medical Assistance', icon: '🏥', link: '/services' },
-    { title: 'Concierge Services', icon: '🎯', link: '/services' },
+    { title: 'Property Management', icon: pmIcon, bgColor: 'bg-blue-100', link: '/services' },
+    { title: 'Service Apartments', icon: stayIcon, bgColor: 'bg-rose-100', link: '/services' },
+    { title: 'Elderly Care', icon: ecIcon, bgColor: 'bg-cyan-100', link: '/services' },
+    { title: 'Legal & Documentation', icon: docsIcon, bgColor: 'bg-emerald-100', link: '/services' },
+    { title: 'Investments & Insurance', icon: investIcon, bgColor: 'bg-yellow-100', link: '/services' },
+    { title: 'Event Management', icon: eventsIcon, bgColor: 'bg-violet-100', link: '/services' },
+    { title: 'Medical Assistance', icon: assistIcon, bgColor: 'bg-orange-100', link: '/services' },
   ]
 
   return (
@@ -26,8 +32,8 @@ export default function Home() {
 
       {/* Service Icons Grid */}
       <section className="section-padding bg-white py-12">
-        <div className="container">
-          <div className="grid grid-cols-4 md:grid-cols-8 gap-4 md:gap-6">
+        <div className="container max-w-6xl">
+          <div className="grid grid-cols-4 md:grid-cols-7 gap-6 md:gap-8 justify-items-center">
             {services.map((service, index) => (
               <Link
                 key={index}
@@ -35,9 +41,11 @@ export default function Home() {
                 className="group flex flex-col items-center justify-center"
               >
                 {/* Icon Container with Gradient Background */}
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-xl bg-gradient-to-br from-brandGreen-400 via-brandGreen-500 to-brandBlue-500 p-4 mb-3 flex items-center justify-center shadow-lg shadow-brandGreen/20 group-hover:shadow-2xl group-hover:shadow-brandGreen/30 transition-all duration-300 transform group-hover:scale-110 group-hover:-translate-y-1">
-                  <div className="text-3xl md:text-4xl">
-                    {service.icon}
+                <div className="relative mb-4 group-hover:scale-105 transition-all duration-300">
+                  <div className={`w-40 h-40 rounded-full ${service.bgColor} p-2 shadow-md`}>
+                    <div className="w-full h-full rounded-full bg-white p-3 flex items-center justify-center">
+                      <img src={service.icon} alt={service.title} className="w-[900%] h-[900%] object-contain" />
+                    </div>
                   </div>
                 </div>
                 <h4 className="text-xs md:text-sm font-semibold text-gray-900 text-center leading-tight">
