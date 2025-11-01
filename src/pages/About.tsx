@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import nriImg from '../assets/nri.png'
+import nriImg from '../assets/approach.png'
 
 export default function About() {
   const [isVisible, setIsVisible] = useState(false)

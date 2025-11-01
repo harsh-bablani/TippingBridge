@@ -42,22 +42,22 @@ export default function Home() {
       {/* Service Icons Grid */}
       <section className="section-padding bg-white py-12">
         <div className="container max-w-6xl">
-          <div className="grid grid-cols-4 md:grid-cols-7 gap-6 md:gap-8 justify-items-center">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4 sm:gap-6 md:gap-8 justify-items-center">
             {services.map((service, index) => (
               <Link
                 key={index}
                 to={service.link}
-                className="group flex flex-col items-center justify-center"
+                className="group flex flex-col items-center justify-center w-full"
               >
                 {/* Icon Container with Gradient Background */}
-                <div className="relative mb-4 group-hover:scale-105 transition-all duration-300">
-                  <div className={`w-40 h-40 rounded-full ${service.bgColor} p-2 shadow-md`}>
-                    <div className="w-full h-full rounded-full bg-white p-3 flex items-center justify-center">
-                      <img src={service.icon} alt={service.title} className="w-[900%] h-[900%] object-contain" />
+                <div className="relative mb-2 sm:mb-4 group-hover:scale-105 transition-all duration-300">
+                  <div className={`w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 rounded-full ${service.bgColor} p-1 shadow-md`}>
+                    <div className="w-full h-full rounded-full bg-white p-0.5 flex items-center justify-center">
+                      <img src={service.icon} alt={service.title} className="w-[95%] h-[95%] object-contain" />
                     </div>
                   </div>
                 </div>
-                <h4 className="text-xs md:text-sm font-semibold text-gray-900 text-center leading-tight">
+                <h4 className="text-xs sm:text-sm md:text-base font-semibold text-gray-900 text-center leading-tight px-1">
                   {service.title}
                 </h4>
               </Link>

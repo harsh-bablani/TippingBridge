@@ -33,64 +33,88 @@ const services: Service[] = [
     iconColor: 'brandGreen',
     features: [
       {
-        title: 'Rent Collection & Deposit',
+        title: 'Rent Collection & Deposit - Smooth Cash Flow for NRIs',
         items: [
+          'Tipping Bridge takes the stress out of rent collection for NRIs and landlords',
           'Monthly rent collection with instant bank deposits',
+          'Ensuring timely payments and same-day deposits without endless tenant follow-ups',
           'Scanned cheques and deposit slips emailed for your NRI tax records',
           'Property tax payments made on your behalf – never miss a deadline',
           'Lease renewal reminders sent to both landlord and tenant',
           'Rent escalations, security deposits, advance payments, and TDS deductions managed seamlessly',
-          'Periodic property inspections plus tenant dispute resolution'
+          'Periodic property inspections plus tenant dispute resolution',
+          'No more chasing tenants – just reliable income and peace of mind'
         ]
       },
       {
-        title: 'Possession Assistance',
+        title: 'Possession Assistance - Get Your Keys Faster and Stress-Free',
         items: [
+          'Taking property possession in India shouldn\'t feel like a legal marathon',
+          'Tipping Bridge simplifies the entire process with expert legal support and hands-on coordination',
           'Gather property details and outstanding dues',
           'Manage payments, stamp duty, and legal documentation',
           'Complete possession formalities on your behalf – no travel required',
           'Deliver final documents (sale deed, possession letter, etc.) securely to you',
           '24/7 NRI support via phone, email, or WhatsApp',
-          'Experienced legal experts handling registry, mutation, and encumbrance clearance'
+          'Experienced legal experts handling registry, mutation, and encumbrance clearance',
+          'Zero delays – we coordinate with builders, societies, and authorities',
+          'Get hassle-free possession without stepping foot in India'
         ]
       },
       {
-        title: 'Keys & Property Management',
+        title: 'Keys & Property Management - Safe & Secure, Even When You\'re Oceans Away',
         items: [
+          'Your property is safe with us – even when you\'re oceans away',
+          'Tipping Bridge provides secure key custody and smart property access control',
+          'Ensuring your asset stays protected, maintained, and ready whenever you need it',
           'Biometric-safe storage with controlled access logs',
           'Coordinated property visits only with your prior approval',
           'On-demand photos/videos delivered within 48 hours',
-          'Dedicated support team for instant updates and emergency handling'
+          'Dedicated support team for instant updates and emergency handling',
+          'Whether it\'s a family visit, tenant handover, or surprise inspection – we make property access effortless and secure'
         ]
       },
       {
-        title: 'Property Maintenance',
+        title: 'Property Maintenance - Leave the Upkeep to Us',
         items: [
+          'Leave the upkeep to us. Tipping Bridge ensures your NRI property in India stays in pristine condition',
+          'Through proactive maintenance, verified vendors, and detailed reporting – all without you lifting a finger',
           '200-point inspection checklist conducted regularly',
           'Comprehensive repair reports with photos and cost breakdowns',
           'Handpicked, vetted vendors with supervised execution',
           'Final repair summary submitted to you for approval and records',
-          'From plumbing leaks and electrical fixes to painting and pest control'
+          'From plumbing leaks and electrical fixes to painting and pest control',
+          'We handle it all with cost efficiency and professional oversight',
+          'Your property stays market-ready, tenant-friendly, and value-protected'
         ]
       },
       {
-        title: 'Tenancy Management',
+        title: 'Tenancy Management - Be the Bridge Between You and Your Tenants',
         items: [
+          'Let us be the bridge between you and your tenants',
+          'Tipping Bridge manages the entire landlord-tenant relationship with professionalism, transparency, and zero drama',
+          'Perfect for absentee NRI landlords',
           'Tenant onboarding, background verification, and agreement drafting',
           'Eviction coordination (if needed) with legal compliance',
           'Rent collection, cheque bounces, and expense tracking',
           'Monthly property condition checks and tenant compliance monitoring',
-          'Complete check-in/check-out documentation with inventory and photos'
+          'Complete check-in/check-out documentation with inventory and photos',
+          'We minimize vacancies, maximize returns, and keep your property in top shape with minimal owner involvement'
         ]
       },
       {
-        title: 'Property Marketing',
+        title: 'Property Marketing - Fill Your Property Faster with Quality Tenants',
         items: [
+          'Vacant property = lost income',
+          'Tipping Bridge uses premium marketing strategies to fill your property faster with quality tenants',
+          'Reducing downtime and boosting rental ROI',
           'Professional photoshoots and 4K video walkthroughs',
           'Branded brochures and SEO-optimized digital listings',
           'Targeted ads on Facebook, Instagram, 99acres, MagicBricks, and Google',
           'Luxury mailers to corporate HRs and relocation agents',
-          'Dedicated property microsite for premium showcasing'
+          'Dedicated property microsite for premium showcasing',
+          'We don\'t just list – we strategically market to attract verified, high-quality tenants quickly',
+          'Result? Shorter vacancies. Higher rents. Stronger returns.'
         ]
       }
     ],
@@ -103,7 +127,7 @@ const services: Service[] = [
   {
     title: 'Long and Short Service Apartments',
     subtitle: 'Your Home Away from Home',
-    description: 'Whether you are traveling for work, reuniting with family, relocating, or planning a long vacation, Tipping Bridge Homes offers comfortable, fully furnished serviced apartments in prime locations.',
+    description: 'Whether you\'re traveling for work, reuniting with family, relocating, or planning a long vacation, Tipping Bridge Homes offers comfortable, fully furnished serviced apartments in prime locations across key Indian cities. Enjoy the comfort of home with the convenience of a hotel — perfect for stays of a few days, weeks, or months.',
     img: conciergeImg,
     gradient: 'from-brandBlue-500 to-brandBlue-700',
     icon: '🏡',
@@ -113,13 +137,15 @@ const services: Service[] = [
       {
         title: 'Why Choose Tipping Bridge Homes',
         items: [
-          'Fully furnished & spacious apartments equipped with kitchen, furniture, and modern amenities',
-          'Prime locations close to grocery stores, shopping, entertainment, and pharmacies',
-          'Cost-effective stays with attractive packages and special discounts for extended stays',
-          'Home comforts: enjoy Wi-Fi, laundry, fitness rooms, and essential utilities',
-          'Flexible bookings: choose your move-in and move-out dates with ease',
-          'Work-friendly: high-speed internet and dedicated workspace for professionals',
-          'Trusted support: 24/7 assistance and verified properties for a worry-free stay'
+          'Fully Furnished & Spacious – Apartments equipped with kitchen, furniture, and modern amenities',
+          'Prime Locations – Close to grocery stores, shopping, entertainment, and pharmacies',
+          'Cost-Effective Stays – Attractive packages and special discounts for extended stays',
+          'Home Comforts – Enjoy Wi-Fi, laundry, fitness rooms, and essential utilities',
+          'Flexible Bookings – Choose your move-in and move-out dates with ease',
+          'Work-Friendly – High-speed internet and dedicated workspace for professionals',
+          'Trusted Support – 24/7 assistance and verified properties for a worry-free stay',
+          'Create lasting memories with family and friends',
+          'Experience the warmth, privacy, and freedom of your second home with Tipping Bridge Serviced Apartments'
         ]
       }
     ]
@@ -135,44 +161,62 @@ const services: Service[] = [
     iconColor: 'brandPink',
     features: [
       {
-        title: 'Health & Fitness',
+        title: 'Health & Fitness - Comprehensive Care, Anytime, Anywhere',
         items: [
+          'At Tipping Bridge, our healthcare team is professionally trained to handle medical needs and emergencies',
+          'With compassion and efficiency. All members are carefully selected from reputed hospitals and diagnostic centers',
+          'Ensuring top-quality care for your loved ones',
           'Tele-consultations and home doctor visits',
           'Sample collection and medicine delivery',
           'Nurse and medical attendant support',
           'Hospitalization and emergency assistance',
           'Medical equipment rental and physiotherapy',
           'Dietician consultations and customized meal plans',
-          'Fitness coaches and wellness tracking'
+          'Fitness coaches and wellness tracking',
+          'We help your parents stay healthy and cared for right from the comfort of home',
+          'Ensuring timely, professional medical support while keeping you informed and connected'
         ]
       },
       {
-        title: 'Filing & Forms',
+        title: 'Filing & Forms - Simplifying Paperwork for Seniors',
         items: [
+          'Legal and financial paperwork can be time-consuming and stressful, especially for the elderly',
+          'Tipping Bridge provides expert assistance to make the process seamless and stress-free',
           'Income tax return filing',
           'Banking and legal documentation',
           'Aadhar Card, Voter ID, and Senior Citizen Card',
-          'General form submissions and verifications'
+          'General form submissions and verifications',
+          'Our experienced team handles everything – from collecting documents to submitting forms',
+          'Ensuring accuracy, confidentiality, and complete peace of mind for you and your loved ones'
         ]
       },
       {
-        title: 'Technology & Troubleshooting',
+        title: 'Technology & Troubleshooting - Bridging the Digital Gap for Seniors',
         items: [
+          'Technology shouldn\'t be a challenge – it should connect families',
+          'Our team patiently guides seniors through today\'s digital essentials',
+          'Ensuring they stay engaged and confident',
           'Virtual meetings (Zoom, Google Meet)',
           'Social media and app setup (Facebook, WhatsApp, Netflix, Uber, etc.)',
           'Hardware troubleshooting and repairs',
-          'Personalized tech tutorials (online or in-person)'
+          'Personalized tech tutorials (online or in-person)',
+          'From teaching video calls to fixing devices, Tipping Bridge empowers seniors to embrace technology',
+          'Staying effortlessly connected with their loved ones'
         ]
       },
       {
-        title: 'Memories & Milestones',
+        title: 'Memories & Milestones - Celebrate Every Moment with Ease',
         items: [
+          'Let your loved ones enjoy their special moments while we handle the planning and arrangements',
+          'From festivals to birthdays, we make every occasion memorable and stress-free',
           'Event planning and personalized gifting',
           'Floral arrangements and décor',
           'Home salon and spa services',
           'Family photoshoots and experiences',
           'Religious ceremonies and Pooja services',
-          'Movie, theatre, and runner services'
+          'Movie, theatre, and runner services',
+          'Whether it\'s a grand celebration or a simple gesture of love',
+          'Tipping Bridge turns every day into a beautiful memory – bringing joy and togetherness right to their doorstep'
         ]
       }
     ]
@@ -188,31 +232,37 @@ const services: Service[] = [
     iconColor: 'brandGold',
     features: [
       {
-        title: 'Insurance Services',
+        title: 'Insurance Services - Comprehensive Coverage & Trusted Guidance',
         items: [
-          'Term Life Insurance: Pure life cover essential for any earning member with dependents',
-          'Motor & Auto Insurance: Comprehensive protection with on-road assistance',
-          'Health Insurance: Tailor-made plans protecting your and your family\'s health',
-          'Home Insurance: Safeguards your home and belongings against unexpected events'
+          'Term Life Insurance: Pure life cover essential for any earning member with dependents. Plans extend up to 30–40 years with locked premiums. Higher sum assured at lower cost when purchased at younger age',
+          'Motor & Auto Insurance: Comprehensive protection against theft, fire, or accident damage with third-party liability coverage. On-road assistance including minor repairs, towing, tyre change support, lockout assistance, and emergency fuel delivery',
+          'Health Insurance: Tailor-made plans protecting your and your family\'s health. Provides financial stability during emergencies and shields you from rising medical expenses',
+          'Home Insurance: Safeguards your home and belongings against unexpected events like floods, fire, or earthquakes. Financial compensation based on reconstruction value for long-term security',
+          'All services are offered in full compliance with IRDA (Insurance Regulatory & Development Authority of India) regulations'
         ]
       },
       {
-        title: 'Mutual Funds & Wealth Advisory',
+        title: 'Mutual Funds & Wealth Advisory - Invest Smart, Grow Steady',
         items: [
-          'Unbiased, goal-based financial guidance',
-          'Direct Mutual Funds, Stocks, ETFs, Bonds, and more',
+          'Expert, personalized investment guidance with unbiased advice focused on your success',
+          'Goal-based financial planning through Direct Mutual Funds, Stocks, ETFs, Bonds, and more',
           'Comprehensive financial planning tailored to your goals and risk appetite',
-          'Strategic portfolio balance across multiple asset classes',
-          'Continuous performance tracking and timely rebalancing'
+          'Emotionally grounded investing - guiding you through volatile markets with discipline',
+          'Strategic portfolio balance across multiple asset classes (Equity, Debt, Gold, etc.)',
+          'Continuous performance tracking and timely rebalancing of your portfolio',
+          'Review and optimization of your existing investments for consistent wealth creation'
         ]
       },
       {
-        title: 'Real Estate Advisory',
+        title: 'Real Estate Advisory - Invest Confidently in India\'s Booming Property Market',
         items: [
+          'Real estate is a preferred and trusted investment avenue for Indians with expected growth of 12–15% CAGR',
+          'Both residential and commercial real estate projected to yield strong long-term returns',
           'Deep market knowledge and insights into India\'s property sector',
           'Awareness of government development plans and growth corridors',
           'Transparent, unbiased, and expert advisory for property investments',
-          'End-to-end support including formalities, due diligence, and negotiations'
+          'End-to-end support including formalities, due diligence, and negotiations',
+          'Strategic role for NRI clients with expert guidance every step of the way'
         ]
       }
     ],
@@ -264,7 +314,7 @@ const services: Service[] = [
   {
     title: 'Healthcare Services',
     subtitle: 'Trusted Medical Support',
-    description: 'Professional healthcare coordination ensuring you and your loved ones receive the best medical care.',
+    description: 'Are you an NRI living abroad and in need of trusted healthcare services in India? Tipping Bridge is here to make your healthcare journey seamless, efficient, and worry-free. Our Assistance Services with Doctors and Hospitals in India are designed to eliminate the stress of scheduling, coordination, and hospitalization — so you can focus on your health while we handle the rest.',
     img: elderlyImg,
     gradient: 'from-brandPink-500 to-brandBlue-600',
     icon: '🏥',
@@ -272,14 +322,16 @@ const services: Service[] = [
     iconColor: 'brandBlue',
     features: [
       {
-        title: 'Doctor & Hospitalization Support',
+        title: 'Doctor Appointments | Specialist Consultations | Hospitalization Support',
         items: [
+          'Professional healthcare coordination ensuring you and your loved ones receive the best medical care',
           'Doctor appointments and specialist consultations',
           'Hospitalization assistance and coordination',
           'Emergency medical support',
           'Sample collection and medicine delivery',
           'Insurance claim processing',
-          'Medical records management'
+          'Medical records management',
+          'Focus on your health while we handle the rest'
         ]
       }
     ],
@@ -291,8 +343,8 @@ const services: Service[] = [
   },
   {
     title: 'Small Events & Gatherings',
-    subtitle: 'Celebrate Every Moment',
-    description: 'End-to-end event planning and management for family gatherings and special occasions.',
+    subtitle: 'Seamless Planning. Thoughtful Execution. Memorable Experiences.',
+    description: 'Do you want to host a small event or family gathering in India but aren\'t sure where to begin? Let Tipping Bridge take care of everything. Our Small Events & Gathering Services are designed especially for NRIs who wish to celebrate meaningful occasions in India without the stress of managing it all from afar. We handle every detail — from venue selection to catering and décor — so you can enjoy the celebration while we ensure everything runs flawlessly.',
     img: conciergeImg,
     gradient: 'from-brandGold-500 to-brandPink-600',
     icon: '🎉',
@@ -302,13 +354,14 @@ const services: Service[] = [
       {
         title: 'Our Event Services',
         items: [
-          'Venue Selection: Choose the perfect venue for your event',
-          'Catering Services: Coordinate with trusted caterers to design menus',
-          'Decoration & Setup: Elegant floral décor to contemporary themed setups',
-          'Transportation & Accommodation: Airport transfers and hotel stays',
-          'Event planning from abroad made effortless',
+          'Venue Selection: Choose the perfect venue for your event whether hosting a cozy get-together or grand family function',
+          'Catering Services: Food brings every celebration to life. Coordinate with trusted caterers to design menus suited to your taste and event theme',
+          'Decoration & Setup: From elegant floral décor to contemporary themed setups, bringing your vision to life with professional ambience and lighting',
+          'Transportation & Accommodation: Airport transfers and hotel stays for your guests with end-to-end logistics support',
+          'Event planning from abroad made effortless with complete transparency and care',
           'Personalized planning to suit your style and budget',
-          'Reliable vendor network across India'
+          'Reliable vendor network across India with experienced event specialists',
+          'Why Choose Tipping Bridge: End-to-end event management, personalized planning, dedicated coordination for NRIs'
         ]
       }
     ],
